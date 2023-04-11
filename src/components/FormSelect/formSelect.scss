@@ -1,0 +1,76 @@
+@import '../../style/resource';
+@import '../FormControl/formControl';
+
+@mixin select-icon($color, $color-arrow) {
+  background-image: escape-svg(getAsterisk($color)), escape-svg(getChevronDownImage($color-arrow)) !important;
+  background-position: right calc(0.375em + 1.6875rem) center,
+    right calc(0.375em + 0.1875rem) center;
+}
+
+.form-floating,
+.input-wrapper {
+  .form-select {
+    padding-left: 0.75rem;
+    color: $gray-darkest;
+    background-image: none !important;
+    border-color: $gray-dark;
+
+    option {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $primary-lightest !important;
+      }
+    }
+
+    ~ .input-icon {
+      background-image: escape-svg(getChevronDownImage($gray-dark)) !important;
+      background-size: 12px !important;
+      @include input-icon;
+    }
+
+    &:required:not(.is-invalid, .is-warning, .is-valid) {
+      background-image: none;
+
+      ~ .input-icon {
+        @include select-icon($gray-dark, $gray-dark);
+      }
+    }
+
+    &.is-warning {
+      &:required {
+        background-image: none;
+        ~ .input-icon {
+          @include select-icon($orange, $gray-dark);
+        }
+      }
+    }
+
+    &.is-invalid {
+      &:required {
+        background-image: none;
+        ~ .input-icon {
+          @include select-icon($red, $gray-dark);
+        }
+      }
+    }
+
+    &:disabled {
+      color: $gray-middle;
+      background: $white;
+      border-color: $gray-middle;
+      cursor: not-allowed;
+
+      ~ .input-icon {
+        background-image: getChevronDownImage($gray-middle) !important;
+      }
+
+      &:required {
+        background-image: none;
+        ~ .input-icon {
+          @include select-icon($gray-middle, $gray-middle);
+        }
+      }
+    }
+  }
+}

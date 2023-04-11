@@ -1,0 +1,40 @@
+@import '../../style/resource';
+@import '../Button/button';
+
+.list-group {
+  .list-group-btn {
+    &.list-group-item {
+      @extend .btn;
+    }
+  }
+
+  &.tab-list-style {
+    .list-group-item {
+      margin-right: $spacer-2;
+      margin-left: $spacer-2;
+      padding-right: 0;
+      padding-left: 0;
+      color: $gray-dark;
+      background-color: transparent;
+      border-color: transparent;
+
+      &.active {
+        color: $primary;
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      @extend .tab_border_top_after;
+    }
+  }
+  &.button-list-style {
+    .list-group-item {
+      border-width: 0;
+      border-radius: 0.25rem;
+
+      + .list-group-item {
+        margin-left: 10px;
+      }
+    }
+  }
+}

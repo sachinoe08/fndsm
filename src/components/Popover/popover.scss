@@ -1,0 +1,59 @@
+@import '../../style/resource';
+
+.popover {
+  &.radius-none {
+    border-radius: 0;
+    .popover-body {
+      border-radius: 0;
+    }
+  }
+
+  &.radius-sm {
+    border-radius: 3px;
+    .popover-body {
+      border-radius: 3px;
+    }
+  }
+
+  &.radius-md {
+    border-radius: 10px;
+    .popover-body {
+      border-radius: 10px;
+    }
+  }
+
+  &.shadow {
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  }
+
+  &.popover-dark {
+    .popover-body {
+      color: $white;
+      background-color: $black;
+    }
+
+    &.bs-popover-top {
+      .popover-arrow::after {
+        border-top-color: $black;
+      }
+    }
+
+    &.bs-popover-start {
+      .popover-arrow::after {
+        border-left-color: $black;
+      }
+    }
+
+    &.bs-popover-end {
+      .popover-arrow::after {
+        border-right-color: $black;
+      }
+    }
+
+    &.bs-popover-bottom {
+      .popover-arrow::after {
+        border-bottom-color: $black;
+      }
+    }
+  }
+}

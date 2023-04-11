@@ -1,0 +1,156 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Tabac G1 Bold';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/fonts/suitcase_type_foundry_-_tabacg1-bold-webfont.woff2')
+      format('woff2'),
+    url('https://static.zennioptical.com/dev/fonts/suitcase_type_foundry_-_tabacg1-bold-webfont.woff')
+      format('woff');
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-solid-900.eot');
+  src: url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-solid-900.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-solid-900.woff2')
+      format('woff2'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-solid-900.woff')
+      format('woff'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-solid-900.ttf')
+      format('truetype'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-solid-900.svg#fontawesome')
+      format('svg');
+  font-display: auto;
+}
+@font-face {
+  font-weight: 400;
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-regular-400.eot');
+  src: url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-regular-400.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-regular-400.woff2')
+      format('woff2'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-regular-400.woff')
+      format('woff'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-regular-400.ttf')
+      format('truetype'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-regular-400.svg#fontawesome')
+      format('svg');
+  font-display: auto;
+}
+@font-face {
+  font-weight: bold;
+  font-family: 'Tabac G1 ';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/fonts/suitcase_type_foundry_-_tabacg1-webfont.woff2')
+      format('woff2'),
+    url('https://static.zennioptical.com/dev/fonts/suitcase_type_foundry_-_tabacg1-webfont.woff')
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff')
+      format('woff'),
+    url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf')
+      format('truetype'),
+    url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg#fontawesome')
+      format('svg');
+  font-display: auto;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-brands-400.eot');
+  src: url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-brands-400.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-brands-400.woff2')
+      format('woff2'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-brands-400.woff')
+      format('woff'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-brands-400.ttf')
+      format('truetype'),
+    url('https://static.zennioptical.com/dev/vendor/font-awesome/5.10.0/webfonts/fa-brands-400.svg#fontawesome')
+      format('svg');
+  font-display: auto;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Lato Black';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/fonts/lato-black-webfont.woff2') format('woff2'),
+    url('https://static.zennioptical.com/dev/fonts/lato-black-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Lato Bold';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/fonts/lato-bold-webfont.woff2') format('woff2'),
+    url('https://static.zennioptical.com/dev/fonts/lato-bold-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Lato Italic';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/fonts/lato-italic-webfont.woff2') format('woff2'),
+    url('https://static.zennioptical.com/dev/fonts/lato-italic-webfont.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-weight: normal;
+  font-family: 'Lato Regular';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('https://static.zennioptical.com/dev/fonts/lato-regular-webfont.woff2') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Lato Light';
+  font-style: normal;
+  src: url('https://static.zennioptical.com/dev/fonts/lato-light-webfont.woff2') format('woff2'),
+    url('https://static.zennioptical.com/dev/fonts/lato-light-webfont.woff2') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AgencyBlack';
+  src: url('https://static.zennioptical.com/marketing/campaign/esports/Agency-FB-Black-Extended.eot');
+  src: url('https://static.zennioptical.com/marketing/campaign/esports/Agency-FB-Black-Extended.woff')
+      format('woff'),
+    url('https://static.zennioptical.com/marketing/campaign/esports/Agency-FB-Black-Extended.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AgencyBold';
+  src: url('https://static.zennioptical.com/marketing/campaign/esports/Agency-FB-Bold-Extended.eot');
+  src: url('https://static.zennioptical.com/marketing/campaign/esports/Agency-FB-Bold-Extended.woff')
+      format('woff'),
+    url('https://static.zennioptical.com/marketing/campaign/esports/Agency-FB-Bold-Extended.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

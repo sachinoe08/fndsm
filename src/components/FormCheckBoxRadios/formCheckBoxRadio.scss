@@ -1,0 +1,43 @@
+@import '../../style/resource';
+
+.form-check {
+  .form-check-label,
+  .form-check-input {
+    cursor: pointer;
+  }
+
+  .form-check-label {
+    color: $gray-dark;
+  }
+
+  .form-check-input {
+    position: relative;
+    border-color: $gray-dark;
+
+    &:disabled {
+      cursor: not-allowed;
+      border-color: $gray-middle;
+      background-color: $white;
+    }
+
+    &:is(:focus, :active) {
+      box-shadow: 0 0 0 3px $primary-lightest;
+      &:not(:checked).is-invalid {
+        box-shadow: 0 0 0 3px $red-lightest;
+      }
+    }
+
+    &:checked {
+      border-color: $primary-lightest;
+      background-color: $primary;
+    }
+
+    &.is-valid {
+      background-size: 20px;
+    }
+
+    &:not(:checked).is-invalid {
+      border-color: $red;
+    }
+  }
+}

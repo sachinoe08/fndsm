@@ -1,0 +1,28 @@
+steps:
+  - id: 'Copy .npmrc'
+    name: gcr.io/cloud-builders/gcloud
+    entrypoint: 'bash'
+    args: ['-c', 'mv ${_NPMRC} .npmrc']
+  - id: 'Registry Login'
+    name: node:16.13.0
+    entrypoint: npm
+    args: ['run', 'artifactregistry-login']
+  - id: 'Install Dependencies'
+    name: node:16.13.0
+    entrypoint: npm
+    args: ['install']
+  - id: 'Build'
+    name: node:16.13.0
+    entrypoint: npm
+    args: ['run', 'build']
+  - id: 'Publish Package'
+    name: node:16.13.0
+    entrypoint: yarn
+    dir: 'dist/'
+    args: ['publish', '${_PACKAGE}', '--ignore-scripts', '--registry=${_REGISTRY_URL}']
+options:
+  substitutionOption: ALLOW_LOOSE
+substitutions:
+  _PACKAGE: '.'
+  _NPMRC: 'dev.npmrc'
+  _REGISTRY_URL: 'https://us-central1-npm.pkg.dev/dev-commerce-services/zenni-ds-dev/'

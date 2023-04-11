@@ -1,0 +1,56 @@
+@import '../../style/resource';
+
+$radio-prefix: 'radio';
+
+.#{$radio-prefix}-wrap:not(.#{$radio-prefix}-button) {
+  display: flex;
+  cursor: pointer;
+  padding: 0 rem(5);
+  flex-grow: 1;
+  align-items: center;
+  color: $primary;
+  .#{$radio-prefix} {
+    flex: none;
+  }
+  .#{$radio-prefix}-label {
+    margin-left: rem(10);
+    font-size: rem(14);
+  }
+  .#{$radio-prefix}-checked + .#{$radio-prefix}-label {
+    font-weight: 400;
+  }
+  .#{$radio-prefix}-group & {
+    .#{$radio-prefix}-label {
+      flex: 1;
+      @media (max-width: 1199px) {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  .#{$radio-prefix}-group & {
+    margin-bottom: rem(20);
+  }
+}
+
+.#{$radio-prefix}-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  label {
+    .form-check-input:checked {
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}
+
+.#{$radio-prefix}-group-column {
+  flex-direction: column;
+}
+.radiogroup {
+  &.flex_row {
+    flex-direction: row;
+  }
+}

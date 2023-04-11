@@ -1,0 +1,63 @@
+@import '../../style/resource';
+
+$placeholder-map: (
+  'primary': (
+    placeholderBgColor: $primary,
+  ),
+  'secondary': (
+    placeholderBgColor: $primary-light,
+  ),
+  'success': (
+    placeholderBgColor: $green-light,
+  ),
+  'warning': (
+    placeholderBgColor: $orange-light,
+  ),
+  'danger': (
+    placeholderBgColor: $red-light,
+  ),
+  'info': (
+    placeholderBgColor: $blue-light,
+  ),
+  'light': (
+    placeholderBgColor: $gray-lightest,
+  ),
+  'dark': (
+    placeholderBgColor: $gray-darkest,
+  ),
+);
+
+.placeholder {
+  display: inline-block;
+
+  @each $placeholder, $map in $placeholder-map {
+    &.bg-#{$placeholder} {
+      background-color: map-get($map, placeholderBgColor) !important;
+    }
+  }
+}
+
+.placeholder-glow {
+  animation: placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes placeholder-glow {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.placeholder-wave {
+  -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  animation: placeholder-wave 2s linear infinite;
+}
+
+@keyframes placeholder-wave {
+  to {
+    -webkit-mask-position: -200% 0;
+    mask-position: -200% 0;
+  }
+}

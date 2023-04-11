@@ -1,0 +1,31 @@
+@import '../../style/resource';
+
+.bars-container {
+  display: flex;
+
+  .bar-item-container {
+    position: relative;
+
+    .progress {
+      min-width: 200px;
+
+      .progress-bar {
+        background-color: $primary;
+      }
+
+      + .outside-label {
+        position: absolute;
+        top: -38px;
+
+        &:after {
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: transparent escape-svg(getChevronDownImage($primary)) center / 10px auto
+            no-repeat;
+          content: '';
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+@use 'sass:map';
+@import './tokens.scss';
+
+// Refer to figma: https://www.figma.com/file/cLIBCqucsgDxJ5GWyxtNtL/WIP_Bootstrap_React?node-id=329%3A246
+
+// Default typography styles
+
+body {
+  color: $gray-darkest;
+  font-size: map.get($font-sizes, 3);
+  font-weight: map.get($font-weights, normal);
+  font-family: $font-family-lato;
+}
+
+p span {
+  line-height: lineHeight(map.get($font-sizes, 3));
+  //padding: 0; Need to check whether set padding as 0 for p.
+}
+
+.p3 {
+  font-size: map.get($font-sizes, 14); // 22
+  line-height: 20px; // 20
+}
+
+.p4 {
+  font-size: map.get($font-sizes, 4); // 20
+  line-height: 24px; // 24
+  letter-spacing: -1.5%;
+}
+
+.p5 {
+  font-size: map.get($font-sizes, 3); // 16
+  line-height: 20px; // 20
+  letter-spacing: 0.01em;
+}
+
+.p6 {
+  font-size: map.get($font-sizes, 3); // 16
+  line-height: 26px; // 26
+}
+
+.p6-1 {
+  font-size: map.get($font-sizes, 3); // 16
+  line-height: 26px; // 26
+  letter-spacing: 0.01em;
+}
+
+.p7 {
+  font-size: map.get($font-sizes, 16); // 18
+  line-height: 28px; // 28
+  letter-spacing: 0.01em;
+}
+
+.p8 {
+  font-size: map.get($font-sizes, 2); // 14
+  line-height: 17px; // 17
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: map.get($font-sizes, 8);
+  font-family: $font-family-tabac;
+  font-weight: map.get($font-weights, bold);
+  line-height: lineHeight(map.get($font-sizes, 8));
+  &.font-size-small {
+    font-size: map.get($font-sizes, 8) * 0.8;
+    line-height: lineHeight(map.get($font-sizes, 8) * 0.8);
+  }
+  &.line-height-small {
+    font-size: map.get($font-sizes, 5);
+    line-height: lineHeight(map.get($font-sizes, 8) * 0.67);
+    letter-spacing: 0.01em;
+  }
+}
+h2 {
+  font-size: map.get($font-sizes, 7);
+  font-family: $font-family-tabac;
+  font-weight: map.get($font-weights, bold);
+  line-height: lineHeight(map.get($font-sizes, 7));
+  &.font-size-small {
+    font-size: map.get($font-sizes, 7) * 0.8;
+    line-height: lineHeight(map.get($font-sizes, 7) * 0.8);
+  }
+}
+h3 {
+  font-size: map.get($font-sizes, 6);
+  font-weight: map.get($font-weights, bold);
+  line-height: lineHeight(map.get($font-sizes, 6));
+  &.font-size-small {
+    font-size: map.get($font-sizes, 6) * 0.8;
+    line-height: lineHeight(map.get($font-sizes, 6) * 0.8);
+  }
+}
+h4 {
+  font-size: map.get($font-sizes, 5);
+  font-weight: map.get($font-weights, bold);
+  line-height: lineHeight(map.get($font-sizes, 5));
+  &.font-size-small {
+    font-size: map.get($font-sizes, 5) * 0.8;
+    line-height: lineHeight(map.get($font-sizes, 5) * 0.8);
+  }
+}
+h5 {
+  font-size: map.get($font-sizes, 4);
+  font-weight: map.get($font-weights, extra-bold);
+  line-height: lineHeight(map.get($font-sizes, 4));
+  &.font-size-small {
+    font-size: map.get($font-sizes, 4) * 0.8;
+    line-height: lineHeight(map.get($font-sizes, 4) * 0.8);
+  }
+}
+h6 {
+  font-size: map.get($font-sizes, 3);
+  font-weight: map.get($font-weights, extra-bold);
+  line-height: lineHeight(map.get($font-sizes, 3));
+  &.font-size-small {
+    font-size: map.get($font-sizes, 3) * 0.8;
+    line-height: lineHeight(map.get($font-sizes, 3) * 0.8);
+  }
+}
+
+// Customized classes
+
+.p-small {
+  font-size: map.get($font-sizes, 2);
+  line-height: lineHeight(map.get($font-sizes, 2));
+}
+
+@mixin display-heading {
+  font-family: $font-family-tabac;
+  font-weight: map.get($font-weights, bold);
+}
+
+.display-heading-1 {
+  @include display-heading;
+  font-size: map.get($font-sizes, 13);
+  line-height: lineHeight(map.get($font-sizes, 13));
+}
+.display-heading-2 {
+  @include display-heading;
+  font-size: map.get($font-sizes, 12);
+  line-height: lineHeight(map.get($font-sizes, 12));
+}
+.display-heading-3 {
+  @include display-heading;
+  font-size: map.get($font-sizes, 11);
+  line-height: lineHeight(map.get($font-sizes, 11));
+}
+.display-heading-4 {
+  @include display-heading;
+  font-size: map.get($font-sizes, 9);
+  line-height: lineHeight(map.get($font-sizes, 9));
+}
+
+.price {
+  font: {
+    family: $font-family-lato;
+    size: map.get($font-sizes, 10);
+  }
+  line-height: lineHeight(map.get($font-sizes, 11));
+  letter-spacing: 0.01em;
+  &-lato {
+    font: {
+      weight: map.get($font-weights, light);
+      style: normal;
+    }
+  }
+}
+
+.b1-button {
+  font: {
+    family: $font-family-lato;
+    size: map.get($font-sizes, 4);
+  }
+  line-height: lineHeight(map.get($font-sizes, 6));
+  letter-spacing: 0.005em;
+  &-lato {
+    font: {
+      weight: map.get($font-weights, normal);
+      style: normal;
+    }
+  }
+}
+
+.b2-button {
+  font: {
+    family: $font-family-lato;
+    size: map.get($font-sizes, 3);
+  }
+  line-height: lineHeight(map.get($font-sizes, 5));
+  letter-spacing: 0.005em;
+  &-lato {
+    font: {
+      weight: map.get($font-weights, normal);
+      style: normal;
+    }
+  }
+}
+
+.l-common-style {
+  font: {
+    family: $font-family-lato;
+    style: normal;
+  }
+  &-lato {
+    font-weight: map.get($font-weights, normal);
+    letter-spacing: 0.005em;
+  }
+  &-bold {
+    font-weight: map.get($font-weights, bold);
+    letter-spacing: 0.015em;
+  }
+}
+
+.l1 {
+  @extend .l-common-style;
+  font-size: map.get($font-sizes, 16);
+  line-height: 26px;
+}
+
+.l2 {
+  @extend .l-common-style;
+  font-size: map.get($font-sizes, 2);
+  line-height: lineHeight(map.get($font-sizes, 14));
+}
+
+.subtitle {
+  font: {
+    family: $font-family-lato;
+    size: map.get($font-sizes, 4);
+    weight: map.get($font-weights, normal);
+  }
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  &-lato {
+    @extend .subtitle;
+    font-style: normal;
+  }
+  &-italic {
+    @extend .subtitle;
+    font-style: italic;
+  }
+}
+
+.flag {
+  font: {
+    family: $font-family-lato;
+    size: map.get($font-sizes, 3);
+    weight: map.get($font-weights, normal);
+  }
+  line-height: lineHeight(map.get($font-sizes, 5));
+  letter-spacing: 0.005em;
+  &-lato {
+    @extend .flag;
+    font-style: normal;
+  }
+  &-italic {
+    @extend .flag;
+    font-style: italic;
+  }
+}
+
+.c1-caption-lato {
+  font: {
+    size: map.get($font-sizes, 1);
+    weight: map.get($font-weights, normal);
+  }
+  line-height: lineHeight(map.get($font-sizes, 4));
+  letter-spacing: 0.005em;
+}
+
+.c2-caption {
+  font : {
+    family: $font-family-lato;
+    size: map.get($font-sizes, 2);
+    weight: map.get($font-weights, normal);
+  }
+  line-height: lineHeight(map.get($font-sizes, 14));
+  letter-spacing: 0.005em;
+  &-lato {
+    @extend .c2-caption;
+    font-style: normal;
+  }
+  &-italic {
+    @extend .c2-caption;
+    font-style: italic;
+  }
+}
+
+// Display headings
+
+.d-common-style {
+  font-weight: map.get($font-weights, bold);
+  font-family: $font-family-tabac;
+  font-style: normal;
+}
+
+.d1 {
+  @extend .d-common-style;
+  font-size: map.get($font-sizes, 13);
+  line-height: 98px;
+}
+
+.d2 {
+  @extend .d-common-style;
+  font-size: 82px;
+  line-height: lineHeight(map.get($font-sizes, 13));
+}
+
+.d3 {
+  @extend .d-common-style;
+  font-size: map.get($font-sizes, 11);
+  line-height: 72px;
+}
+
+.d4 {
+  @extend .d-common-style;
+  font-size: map.get($font-sizes, 9);
+  line-height: lineHeight(map.get($font-sizes, 10));
+}

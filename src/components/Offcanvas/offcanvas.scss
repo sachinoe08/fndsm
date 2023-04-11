@@ -1,0 +1,30 @@
+@import '../../style/resource';
+
+.offcanvas {
+  border: none;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+
+  .offcanvas-header {
+    + .offcanvas-body {
+      border-radius: 15px 15px 0 0;
+      box-shadow: 0 -5px 5px 0 $gray;
+    }
+
+    .btn-close {
+      display: flex;
+      align-items: center;
+      color: $gray-dark;
+      background: none;
+      background: transparent escape-svg(getCloseImage($gray-dark)) center / 12px auto no-repeat;
+      opacity: 1;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .offcanvas-body {
+    background-color: $gray-lightest;
+  }
+}

@@ -1,0 +1,140 @@
+@import '../../style/resource';
+
+$borderButton: 1px;
+$btns-map: (
+  'secondary': (
+    btnTextColor: $primary-darkest,
+    btnBorderBgColor: $primary-lightest,
+    btnTextColorHover: $primary-darkest,
+    btnBorderBgColorHover: $primary-light,
+  ),
+  'success': (
+    btnTextColor: $green-darkest,
+    btnBorderBgColor: $green-light,
+    btnTextColorHover: $green-darkest,
+    btnBorderBgColorHover: $green-lightest,
+  ),
+  'warning': (
+    btnTextColor: $orange-darkest,
+    btnBorderBgColor: $orange-light,
+    btnTextColorHover: $orange-darkest,
+    btnBorderBgColorHover: $orange-lightest,
+  ),
+  'danger': (
+    btnTextColor: $red-darkest,
+    btnBorderBgColor: $red-light,
+    btnTextColorHover: $red-darkest,
+    btnBorderBgColorHover: $red-lightest,
+  ),
+  'info': (
+    btnTextColor: $blue-darkest,
+    btnBorderBgColor: $blue-light,
+    btnTextColorHover: $blue-darkest,
+    btnBorderBgColorHover: $blue-lightest,
+  ),
+  'light': (
+    btnTextColor: $gray-darkest,
+    btnBorderBgColor: $gray-lightest,
+    btnTextColorHover: $gray-darkest,
+    btnBorderBgColorHover: $gray-light,
+  ),
+  'dark': (
+    btnTextColor: $white,
+    btnBorderBgColor: $gray-darkest,
+    btnTextColorHover: $white,
+    btnBorderBgColorHover: $gray-dark,
+  ),
+);
+
+.btn {
+  font-weight: 400;
+  padding: ($spacer-3 * 0.35) ($spacer-3 * 0.75);
+  font-size: rem(20);
+  line-height: 29px;
+
+  &:disabled {
+    opacity: 0.45;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    border-width: $borderButton;
+
+    &:focus,
+    &:hover {
+      color: $primary-darkest;
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
+  }
+
+  &.btn-outline-primary {
+    color: $primary;
+    border-width: $borderButton;
+    background-color: transparent;
+
+    &:focus,
+    &:hover {
+      color: $primary-darkest;
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
+  }
+
+  @each $alert, $map in $btns-map {
+    &.btn-#{$alert} {
+      &:focus {
+        border: none;
+      }
+      color: map-get($map, btnTextColor);
+      background-color: map-get($map, btnBorderBgColor);
+      border-color: map-get($map, btnBorderBgColor);
+      border-width: $borderButton;
+
+      &:focus,
+      &:hover {
+        color: map-get($map, btnTextColorHover);
+        background-color: map-get($map, btnBorderBgColorHover);
+        border-color: map-get($map, btnBorderBgColorHover);
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &.btn-outline-#{$alert} {
+      color: map-get($map, btnTextColor);
+      border-color: map-get($map, btnBorderBgColor);
+      border-width: $borderButton;
+      background-color: transparent;
+
+      &:focus,
+      &:hover {
+        color: map-get($map, btnTextColorHover);
+        background-color: map-get($map, btnBorderBgColorHover);
+        border-color: map-get($map, btnBorderBgColorHover);
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.btn-outline-dark {
+    color: $gray-darkest;
+
+    &:focus,
+    &:hover {
+      color: $white;
+      background-color: $gray-dark;
+      border-color: $gray-dark;
+    }
+  }
+}

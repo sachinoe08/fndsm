@@ -1,0 +1,77 @@
+@import '../../style/resource';
+
+.is-warning {
+  & > .form-check-input {
+    background-size: 12px;
+    border-color: $pink;
+    &:checked {
+      border-color: $pink;
+      &[type='radio'] {
+        &::before {
+          border-color: $primary-dark;
+        }
+      }
+    }
+    &:focus,
+    &:active {
+      border-color: $pink;
+    }
+  }
+}
+.radio-wrap {
+  .radio-label {
+    color: $gray-dark;
+    font-family: $font-Lato;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .form-check-input {
+    position: relative;
+    border-color: transparent;
+    cursor: pointer;
+    &:checked {
+      &[type='radio'] {
+        &::before {
+          border-color: #aaa;
+        }
+      }
+    }
+    &[type='radio'] {
+      background-image: none;
+      &::before {
+        border-radius: 50%;
+      }
+    }
+    &::before {
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      z-index: -1;
+      width: calc($form-check-input-width + 6px);
+      height: calc($form-check-input-width + 6px);
+      border: 1px solid $gray;
+      content: ' ';
+    }
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.3;
+    }
+    &.is-warning {
+      background-size: 12px;
+      border-color: $pink;
+      &::placeholder {
+        color: $pink;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    &:is(:focus, :active) {
+      border-color: transparent;
+      box-shadow: none;
+    }
+    &.is-valid {
+      background-size: 20px;
+    }
+  }
+}

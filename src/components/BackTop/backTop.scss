@@ -1,0 +1,30 @@
+@import '../../style/resource';
+
+.back-top {
+  @media (min-width: 1024px) {
+    bottom: rem(25);
+  }
+  position: fixed;
+  bottom: rem(70);
+  z-index: 10000;
+  width: rem(40);
+  height: rem(40);
+  padding: rem(4);
+  color: #fff;
+  font-size: rem(14);
+  text-align: center;
+  text-decoration: none;
+  background-color: #007b8f;
+  cursor: pointer;
+
+  i {
+    display: block;
+    &.fa.fa-chevron-down {
+      transform: rotate(180deg);
+      &::before {
+        color: #fff;
+        content: '\f078';
+      }
+    }
+  }
+}

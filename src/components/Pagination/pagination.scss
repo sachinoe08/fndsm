@@ -1,0 +1,53 @@
+@import '../../style/resource';
+
+.pagination {
+  li.page-item {
+    a.page-link {
+      box-shadow: none !important;
+    }
+
+    &:not(.page-display) {
+      span {
+        display: block;
+        width: 10px;
+        color: transparent;
+      }
+    }
+
+    &.page-display {
+      a.page-link {
+        padding-right: $spacer-0;
+        padding-left: $spacer-0;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.previous-page {
+      a.page-link {
+        padding-right: $spacer-1;
+        span {
+          background: transparent escape-svg(getChevronLeftImage($primary)) center / 8px auto
+            no-repeat;
+        }
+      }
+    }
+
+    &.next-page {
+      a.page-link {
+        padding-left: 5px;
+        span {
+          background: transparent escape-svg(getChevronRightImage($primary)) center / 8px auto
+            no-repeat;
+        }
+      }
+    }
+
+    a.page-link {
+      color: $primary;
+      border: none;
+    }
+  }
+}

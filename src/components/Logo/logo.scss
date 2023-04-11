@@ -1,0 +1,10 @@
+@import '../../style/resource';
+
+.zenni-logo > img {
+  width: $logo-width;
+  @each $key, $val in $logo-size {
+    @include media-breakpoint-up(#{$key}) {
+      width: $val;
+    }
+  }
+}

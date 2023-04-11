@@ -1,0 +1,50 @@
+@import '../../style/resource';
+
+.radius-none {
+  .tooltip-inner {
+    border-radius: 0;
+  }
+}
+
+.radius-sm {
+  .tooltip-inner {
+    border-radius: 3px;
+  }
+}
+
+.radius-md {
+  .tooltip-inner {
+    border-radius: 10px;
+  }
+}
+
+.tooltip-light {
+  .tooltip-inner {
+    color: $gray-dark;
+    background-color: $white;
+  }
+
+  &.bs-tooltip-top {
+    .tooltip-arrow::before {
+      border-top-color: $white;
+    }
+  }
+
+  &.bs-tooltip-start {
+    .tooltip-arrow::before {
+      border-left-color: $white;
+    }
+  }
+
+  &.bs-tooltip-end {
+    .tooltip-arrow::before {
+      border-right-color: $white;
+    }
+  }
+
+  &.bs-tooltip-bottom {
+    .tooltip-arrow::before {
+      border-bottom-color: $white;
+    }
+  }
+}

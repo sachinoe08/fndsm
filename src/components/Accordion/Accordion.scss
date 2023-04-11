@@ -1,0 +1,63 @@
+@import '../../style/resource';
+
+.accordion {
+  .accordion-item {
+    border: none;
+  }
+
+  .accordion-item-border-radius-sm {
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .accordion-item-border-radius-md {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .accordion-item-box-shadow {
+    box-shadow: 0 0 5px 0 rgb(135 120 116 / 50%);
+  }
+
+  .accordion-item-bottom-margin-sm {
+    margin-bottom: $spacer-1;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .accordion-item-bottom-margin-md {
+    margin-bottom: $spacer-2;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .accordion-item-bottom-margin-lg {
+    margin-bottom: $spacer-3;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .accordion-button {
+    &:hover {
+      color: $primary;
+    }
+
+    &::after {
+      margin-top: 0.3rem;
+      filter: brightness(0) saturate(100%) invert(17%) sepia(55%) saturate(6501%) hue-rotate(177deg)
+        brightness(101%) contrast(106%);
+    }
+
+    &:not(.collapsed) {
+      color: $primary;
+      background-color: $accordion-button-bg;
+      border: none;
+    }
+  }
+}

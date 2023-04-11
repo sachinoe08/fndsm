@@ -1,0 +1,1593 @@
+{
+  "filterData": [
+    {
+      "filterId": "prescription",
+      "filterText": "Prescription",
+      "filterDimension": [
+        {
+          "headerText": "Pupillary Distance - PD",
+          "dimensionType": "pd",
+          "displayName": "PD",
+          "dimensions": [
+            {
+              "pdTypeClass": "single",
+              "isHidden": false,
+              "radioButtonData": {
+                "radioButtonText": "Single PD",
+                "checked": true,
+                "isHidden": "false"
+              },
+              "listboxData": [
+                {
+                  "listboxTitle": "Select",
+                  "selectedoption": "",
+                  "options": [
+                    {
+                      "value": "35"
+                    },
+                    {
+                      "value": "36"
+                    },
+                    {
+                      "value": "37"
+                    },
+                    {
+                      "value": "38"
+                    },
+                    {
+                      "value": "39"
+                    },
+                    {
+                      "value": "40"
+                    },
+                    {
+                      "value": "41"
+                    },
+                    {
+                      "value": "42"
+                    },
+                    {
+                      "value": "43"
+                    },
+                    {
+                      "value": "44"
+                    },
+                    {
+                      "value": "45"
+                    },
+                    {
+                      "value": "46"
+                    },
+                    {
+                      "value": "47"
+                    },
+                    {
+                      "value": "48"
+                    },
+                    {
+                      "value": "49"
+                    },
+                    {
+                      "value": "50"
+                    },
+                    {
+                      "value": "51"
+                    },
+                    {
+                      "value": "52"
+                    },
+                    {
+                      "value": "53"
+                    },
+                    {
+                      "value": "54"
+                    },
+                    {
+                      "value": "55"
+                    },
+                    {
+                      "value": "56"
+                    },
+                    {
+                      "value": "57"
+                    },
+                    {
+                      "value": "58"
+                    },
+                    {
+                      "value": "59"
+                    },
+                    {
+                      "value": "60"
+                    },
+                    {
+                      "value": "61"
+                    },
+                    {
+                      "value": "62"
+                    },
+                    {
+                      "value": "63"
+                    },
+                    {
+                      "value": "64"
+                    },
+                    {
+                      "value": "65"
+                    },
+                    {
+                      "value": "66"
+                    },
+                    {
+                      "value": "67"
+                    },
+                    {
+                      "value": "68"
+                    },
+                    {
+                      "value": "69"
+                    },
+                    {
+                      "value": "70"
+                    },
+                    {
+                      "value": "71"
+                    },
+                    {
+                      "value": "72"
+                    },
+                    {
+                      "value": "73"
+                    },
+                    {
+                      "value": "74"
+                    },
+                    {
+                      "value": "75"
+                    },
+                    {
+                      "value": "76"
+                    },
+                    {
+                      "value": "77"
+                    },
+                    {
+                      "value": "78"
+                    },
+                    {
+                      "value": "79"
+                    },
+                    {
+                      "value": "80"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "pdTypeClass": "dual",
+              "isHidden": true,
+              "radioButtonData": {
+                "radioButtonText": "Dual PD",
+                "displayName": "PD",
+                "checked": false
+              },
+              "listboxData": [
+                {
+                  "listboxTitle": "Right",
+                  "selectedoption": "",
+                  "options": [
+                    {
+                      "value": "17.5"
+                    },
+                    {
+                      "value": "18"
+                    },
+                    {
+                      "value": "18.5"
+                    },
+                    {
+                      "value": "19"
+                    },
+                    {
+                      "value": "19.5"
+                    },
+                    {
+                      "value": "20"
+                    },
+                    {
+                      "value": "20.5"
+                    },
+                    {
+                      "value": "21"
+                    },
+                    {
+                      "value": "21.5"
+                    },
+                    {
+                      "value": "22"
+                    },
+                    {
+                      "value": "22.5"
+                    },
+                    {
+                      "value": "23"
+                    },
+                    {
+                      "value": "23.5"
+                    },
+                    {
+                      "value": "24"
+                    },
+                    {
+                      "value": "24.5"
+                    },
+                    {
+                      "value": "25"
+                    },
+                    {
+                      "value": "25.5"
+                    },
+                    {
+                      "value": "26"
+                    },
+                    {
+                      "value": "26.5"
+                    },
+                    {
+                      "value": "27"
+                    },
+                    {
+                      "value": "27.5"
+                    },
+                    {
+                      "value": "28"
+                    },
+                    {
+                      "value": "28.5"
+                    },
+                    {
+                      "value": "29"
+                    },
+                    {
+                      "value": "29.5"
+                    },
+                    {
+                      "value": "30"
+                    },
+                    {
+                      "value": "30.5"
+                    },
+                    {
+                      "value": "31"
+                    },
+                    {
+                      "value": "31.5"
+                    },
+                    {
+                      "value": "32"
+                    },
+                    {
+                      "value": "32.5"
+                    },
+                    {
+                      "value": "33"
+                    },
+                    {
+                      "value": "33.5"
+                    },
+                    {
+                      "value": "34"
+                    },
+                    {
+                      "value": "34.5"
+                    },
+                    {
+                      "value": "35"
+                    },
+                    {
+                      "value": "35.5"
+                    },
+                    {
+                      "value": "36"
+                    },
+                    {
+                      "value": "36.5"
+                    },
+                    {
+                      "value": "37"
+                    },
+                    {
+                      "value": "37.5"
+                    },
+                    {
+                      "value": "38"
+                    },
+                    {
+                      "value": "38.5"
+                    },
+                    {
+                      "value": "39"
+                    },
+                    {
+                      "value": "39.5"
+                    },
+                    {
+                      "value": "40"
+                    }
+                  ]
+                },
+                {
+                  "listboxTitle": "Left",
+                  "selectedoption": "",
+                  "options": [
+                    {
+                      "value": "17.5"
+                    },
+                    {
+                      "value": "18"
+                    },
+                    {
+                      "value": "18.5"
+                    },
+                    {
+                      "value": "19"
+                    },
+                    {
+                      "value": "19.5"
+                    },
+                    {
+                      "value": "20"
+                    },
+                    {
+                      "value": "20.5"
+                    },
+                    {
+                      "value": "21"
+                    },
+                    {
+                      "value": "21.5"
+                    },
+                    {
+                      "value": "22"
+                    },
+                    {
+                      "value": "22.5"
+                    },
+                    {
+                      "value": "23"
+                    },
+                    {
+                      "value": "23.5"
+                    },
+                    {
+                      "value": "24"
+                    },
+                    {
+                      "value": "24.5"
+                    },
+                    {
+                      "value": "25"
+                    },
+                    {
+                      "value": "25.5"
+                    },
+                    {
+                      "value": "26"
+                    },
+                    {
+                      "value": "26.5"
+                    },
+                    {
+                      "value": "27"
+                    },
+                    {
+                      "value": "27.5"
+                    },
+                    {
+                      "value": "28"
+                    },
+                    {
+                      "value": "28.5"
+                    },
+                    {
+                      "value": "29"
+                    },
+                    {
+                      "value": "29.5"
+                    },
+                    {
+                      "value": "30"
+                    },
+                    {
+                      "value": "30.5"
+                    },
+                    {
+                      "value": "31"
+                    },
+                    {
+                      "value": "31.5"
+                    },
+                    {
+                      "value": "32"
+                    },
+                    {
+                      "value": "32.5"
+                    },
+                    {
+                      "value": "33"
+                    },
+                    {
+                      "value": "33.5"
+                    },
+                    {
+                      "value": "34"
+                    },
+                    {
+                      "value": "34.5"
+                    },
+                    {
+                      "value": "35"
+                    },
+                    {
+                      "value": "35.5"
+                    },
+                    {
+                      "value": "36"
+                    },
+                    {
+                      "value": "36.5"
+                    },
+                    {
+                      "value": "37"
+                    },
+                    {
+                      "value": "37.5"
+                    },
+                    {
+                      "value": "38"
+                    },
+                    {
+                      "value": "38.5"
+                    },
+                    {
+                      "value": "39"
+                    },
+                    {
+                      "value": "39.5"
+                    },
+                    {
+                      "value": "40"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "headerText": "Type",
+          "dimensionType": "type",
+          "dimensions": [
+            {
+              "text": "Single Vision",
+              "value": "Single Vision",
+              "checked": false
+            },
+            {
+              "text": "Bifocal",
+              "value": "Bifocal",
+              "checked": false
+            },
+            {
+              "text": "Progressive",
+              "value": "Progressive",
+              "checked": false
+            },
+            {
+              "text": "Readers",
+              "value": "Readers",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filterId": "gender",
+      "filterText": "Gender",
+      "facetName": "genders",
+      "filterDimension": [
+        {
+          "text": "Boy",
+          "value": "Boy",
+          "id": "filtering-boy",
+          "checked": false
+        },
+        {
+          "text": "Girl",
+          "value": "Girl",
+          "id": "filtering-girl",
+          "checked": false
+        },
+        {
+          "text": "Men",
+          "value": "Men",
+          "id": "filtering-men",
+          "checked": false
+        },
+        {
+          "text": "Women",
+          "value": "Women",
+          "id": "filtering-women",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "filterId": "color",
+      "filterText": "Color",
+      "facetName": "colors",
+      "filterDimension": [
+        {
+          "text": "Black",
+          "value": "Black",
+          "id": "filtering-swatch-black",
+          "swatchclass": "color-swatch-black",
+          "checked": false
+        },
+        {
+          "text": "Blue",
+          "value": "Blue",
+          "id": "filtering-swatch-blue",
+          "swatchclass": "color-swatch-blue",
+          "checked": false
+        },
+        {
+          "text": "Brown",
+          "value": "Brown",
+          "id": "filtering-swatch-brown",
+          "swatchclass": "color-swatch-brown",
+          "checked": false
+        },
+        {
+          "text": "Cream",
+          "value": "Cream",
+          "id": "filtering-swatch-cream",
+          "swatchclass": "color-swatch-cream",
+          "checked": false
+        },
+        {
+          "text": "Gold",
+          "value": "Gold",
+          "id": "filtering-swatch-gold",
+          "swatchclass": "color-swatch-gold",
+          "checked": false
+        },
+        {
+          "text": "Gray",
+          "value": "Gray",
+          "id": "filtering-swatch-gray",
+          "swatchclass": "color-swatch-gray",
+          "checked": false
+        },
+        {
+          "text": "Green",
+          "value": "Green",
+          "id": "filtering-swatch-green",
+          "swatchclass": "color-swatch-green",
+          "checked": false
+        },
+        {
+          "text": "Multicolor",
+          "value": "Multicolor",
+          "id": "filtering-swatch-multicolor",
+          "swatchclass": "color-swatch-multicolor",
+          "checked": false
+        },
+        {
+          "text": "Orange",
+          "value": "Orange",
+          "id": "filtering-swatch-orange",
+          "swatchclass": "color-swatch-orange",
+          "checked": false
+        },
+        {
+          "text": "Pattern",
+          "value": "Pattern",
+          "id": "filtering-swatch-pattern",
+          "swatchclass": "color-swatch-pattern",
+          "checked": false
+        },
+        {
+          "text": "Pink",
+          "value": "Pink",
+          "id": "filtering-swatch-pink",
+          "swatchclass": "color-swatch-pink",
+          "checked": false
+        },
+        {
+          "text": "Purple",
+          "value": "Purple",
+          "id": "filtering-swatch-purple",
+          "swatchclass": "color-swatch-purple",
+          "checked": false
+        },
+        {
+          "text": "Red",
+          "value": "Red",
+          "id": "filtering-swatch-red",
+          "swatchclass": "color-swatch-red",
+          "checked": false
+        },
+        {
+          "text": "Silver",
+          "value": "Silver",
+          "id": "filtering-swatch-silver",
+          "swatchclass": "color-swatch-silver",
+          "checked": false
+        },
+        {
+          "text": "Tortoiseshell",
+          "value": "Tortoiseshell",
+          "id": "filtering-swatch-tortoiseshell",
+          "swatchclass": "color-swatch-tortoiseshell",
+          "checked": false
+        },
+        {
+          "text": "Translucent",
+          "value": "Translucent",
+          "id": "filtering-swatch-translucent",
+          "swatchclass": "color-swatch-translucent",
+          "checked": false
+        },
+        {
+          "text": "White",
+          "value": "White",
+          "id": "filtering-swatch-white",
+          "swatchclass": "color-swatch-white",
+          "checked": false
+        },
+        {
+          "text": "Wood Texture",
+          "value": "Wood Texture",
+          "id": "filtering-swatch-wood-texture",
+          "swatchclass": "color-swatch-wood-texture",
+          "checked": false
+        },
+        {
+          "text": "Yellow",
+          "value": "Yellow",
+          "id": "filtering-swatch-yellow",
+          "swatchclass": "color-swatch-yellow",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "filterId": "shape",
+      "filterText": "Shape",
+      "facetName": "frame_shape",
+      "filterDimension": [
+        {
+          "text": "Aviator",
+          "value": "Aviator",
+          "id": "filtering-aviator",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/aviator-shape.svg",
+          "checked": false
+        },
+        {
+          "text": "Browline",
+          "value": "Browline",
+          "id": "filtering-browline",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/browline-shape.svg",
+          "checked": false
+        },
+        {
+          "text": "Cat-Eye",
+          "value": "Cat-Eye",
+          "id": "filtering-cat-eye",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/catEye-shape.svg",
+          "checked": false
+        },
+        {
+          "text": "Geometric",
+          "value": "Geometric",
+          "id": "filtering-geometric",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/geometric-shape.svg",
+          "checked": false
+        },
+        {
+          "text": "Oval",
+          "value": "Oval",
+          "id": "filtering-oval",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/oval-shape.svg",
+          "checked": false
+        },
+        {
+          "text": "Rectangle",
+          "value": "Rectangle",
+          "id": "filtering-rectangle",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/rectangle-shape.svg",
+          "checked": false
+        },
+        {
+          "text": "Round",
+          "value": "Round",
+          "id": "filtering-round",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/round-shape.svg",
+          "checked": false
+        },
+        {
+          "text": "Square",
+          "value": "Square",
+          "id": "filtering-square",
+          "icon": "//static.zennioptical.com/marketing/filter/shape/square-shape.svg",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "filterId": "material",
+      "filterText": "Material",
+      "facetName": "material",
+      "filterDimension": [
+        {
+          "text": "All Plastics",
+          "value": "All Plastics",
+          "displayAll": true,
+          "items": [
+            {
+              "text": "Ultem",
+              "value": "Ultem",
+              "id": "filtering-ultem",
+              "checked": false
+            },
+            {
+              "text": "TR",
+              "value": "TR",
+              "id": "filtering-tr",
+              "checked": false
+            },
+            {
+              "text": "Other Plastic",
+              "value": "Other Plastic",
+              "id": "filtering-other plastic",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "text": "All Metals",
+          "value": "All Metals",
+          "displayAll": true,
+          "items": [
+            {
+              "text": "Titanium",
+              "value": "Titanium",
+              "id": "filtering-titanium",
+              "checked": false
+            },
+            {
+              "text": "Memory Titanium",
+              "value": "Memory Titanium",
+              "id": "filtering-memory titanium",
+              "checked": false
+            },
+            {
+              "text": "Stainless Steel",
+              "value": "Stainless Steel",
+              "id": "filtering-stainless steel",
+              "checked": false
+            },
+            {
+              "text": "Other Metal",
+              "value": "Other Metal",
+              "id": "filtering-other metal",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "text": "Mixed Materials",
+          "value": "Mixed Materials",
+          "displayAll": true,
+          "items": []
+        }
+      ]
+    },
+    {
+      "filterId": "size",
+      "filterText": "Size",
+      "filterSizeNav": {
+        "filterNavID": "#adult-frame-width",
+        "type": "#adult"
+      },
+      "filterDimension": [
+        {
+          "radioButtonData": {
+            "radioButtonText": "Adults",
+            "radioButtonId": "select-filter-size-adults",
+            "radioButtonName": "select-filter-size-group",
+            "radioButtonValue": "adults",
+            "checked": true,
+            "isHidden": true,
+            "isActive": "active"
+          },
+          "dimensions": [
+            {
+              "tabPanelID": "adult-frame-width",
+              "facetName": "frame_width",
+              "headerText": "Frame Width",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/frame-width.svg",
+              "isActive": "active",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "110 - 127",
+                  "unit": "mm",
+                  "id": "filtering-frame-adult-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 110,
+                  "max": 127,
+                  "dimensionName": "Adult Frame Width"
+                },
+                {
+                  "text": "small:",
+                  "value": "128 - 134",
+                  "unit": "mm",
+                  "id": "filtering-frame-adult-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "dimensionName": "Adult Frame Width"
+                },
+                {
+                  "text": "medium:",
+                  "value": "135 - 139",
+                  "unit": "mm",
+                  "id": "filtering-frame-adult-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "dimensionName": "Adult Frame Width"
+                },
+                {
+                  "text": "large:",
+                  "value": "140+",
+                  "unit": "mm",
+                  "id": "filtering-frame-adult-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Frame-Width-Large/_/N-828559946",
+                  "dimensionName": "Adult Frame Width"
+                },
+                {
+                  "text": "custom:",
+                  "value": "107 - 200",
+                  "unit": "mm",
+                  "id": "filtering-frame-adult-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 107,
+                  "max": 200,
+                  "url": "/b?Nf=Frame Width|BTWN+{range}",
+                  "dimensionName": "Adult Frame Width"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "adult-bridge",
+              "facetName": "bridge",
+              "headerText": "Bridge Width",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/bridge.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "5 - 16",
+                  "unit": "mm",
+                  "id": "filtering-bridge-adult-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Bridge-Extra-Small/_/N-2168399506",
+                  "dimensionName": "Adult Bridge"
+                },
+                {
+                  "text": "small:",
+                  "value": "17 - 18",
+                  "unit": "mm",
+                  "id": "filtering-bridge-adult-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Bridge-Small/_/N-690731723",
+                  "dimensionName": "Adult Bridge"
+                },
+                {
+                  "text": "medium:",
+                  "value": "19 - 21",
+                  "unit": "mm",
+                  "id": "filtering-bridge-adult-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Bridge-Medium/_/N-2562012042",
+                  "dimensionName": "Adult Bridge"
+                },
+                {
+                  "text": "large:",
+                  "value": "22+",
+                  "unit": "mm",
+                  "id": "filtering-bridge-adult-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Bridge-Large/_/N-540805358",
+                  "dimensionName": "Adult Bridge"
+                },
+                {
+                  "text": "custom:",
+                  "value": "8 - 32",
+                  "unit": "mm",
+                  "id": "filtering-bridge-adult-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 8,
+                  "max": 32,
+                  "url": "/b?Nf=Bridge|BTWN+{range}",
+                  "dimensionName": "Adult Bridge"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "adult-lens-height",
+              "facetName": "lens_height",
+              "headerText": "Lens Height",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/lens-height.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "21 - 27",
+                  "unit": "mm",
+                  "id": "filtering-height-adult-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Height-Extra-Small/_/N-2363566403",
+                  "dimensionName": "Adult Lens Height"
+                },
+                {
+                  "text": "small:",
+                  "value": "28 - 32",
+                  "unit": "mm",
+                  "id": "filtering-height-adult-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Height-Small/_/N-3894430708",
+                  "dimensionName": "Adult Lens Height"
+                },
+                {
+                  "text": "medium:",
+                  "value": "33 - 40",
+                  "unit": "mm",
+                  "id": "filtering-height-adult-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Height-Medium/_/N-3068825447",
+                  "dimensionName": "Adult Lens Height"
+                },
+                {
+                  "text": "large:",
+                  "value": "41+",
+                  "unit": "mm",
+                  "id": "filtering-height-adult-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Height-Large/_/N-607517794",
+                  "dimensionName": "Adult Lens Height"
+                },
+                {
+                  "text": "custom:",
+                  "value": "19 - 77",
+                  "unit": "mm",
+                  "id": "filtering-height-adult-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 19,
+                  "max": 77,
+                  "url": "/b?Nf=Lens Height|BTWN+{range}",
+                  "dimensionName": "Adult Lens Height"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "adult-lens-width",
+              "facetName": "lens_width",
+              "headerText": "Lens Width",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/lens-width.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "35 - 48",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Extra-Small/_/N-4000036420",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "small:",
+                  "value": "49 - 51",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Small/_/N-3624886531",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "medium:",
+                  "value": "52 - 54",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Medium/_/N-158980047",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "large:",
+                  "value": "55+",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Large/_/N-831012944",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "custom:",
+                  "value": "36 - 78",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 36,
+                  "max": 78,
+                  "url": "/b?Nf=Lens Width|BTWN+{range}",
+                  "dimensionName": "Adult Lens Width"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "adult-temple-arm",
+              "facetName": "temple_arm",
+              "headerText": "Temple Arm",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/temple-length.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "35 - 48",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Extra-Small/_/N-4000036420",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "small:",
+                  "value": "49 - 51",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Small/_/N-3624886531",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "medium:",
+                  "value": "52 - 54",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Medium/_/N-158980047",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "large:",
+                  "value": "55+",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Adult-Lens-Width-Large/_/N-831012944",
+                  "dimensionName": "Adult Lens Width"
+                },
+                {
+                  "text": "custom:",
+                  "value": "36 - 78",
+                  "unit": "mm",
+                  "id": "filtering-lens-adult-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 36,
+                  "max": 78,
+                  "url": "/b?Nf=Lens Width|BTWN+{range}",
+                  "dimensionName": "Adult Lens Width"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "radioButtonData": {
+            "radioButtonText": "Kids",
+            "radioButtonId": "select-filter-size-kids",
+            "radioButtonName": "select-filter-size-group",
+            "radioButtonValue": "kids",
+            "checked": false,
+            "isHidden": false,
+            "isActive": ""
+          },
+          "dimensions": [
+            {
+              "tabPanelID": "kids-frame-width-size",
+              "headerText": "Frame Width",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/frame-width.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "100-118",
+                  "unit": "mm",
+                  "id": "filtering-frame-kids-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Frame-Width-Extra-Small/_/N-1688047283",
+                  "dimensionName": "Kids Frame Width"
+                },
+                {
+                  "text": "small:",
+                  "value": "119 - 122",
+                  "unit": "mm",
+                  "id": "filtering-frame-kids-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Frame-Width-Small/_/N-930835307",
+                  "dimensionName": "Kids Frame Width"
+                },
+                {
+                  "text": "medium:",
+                  "value": "123 - 129",
+                  "unit": "mm",
+                  "id": "filtering-frame-kids-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Frame-Width-Medium/_/N-331005217",
+                  "dimensionName": "Kids Frame Width"
+                },
+                {
+                  "text": "large:",
+                  "value": "130+",
+                  "unit": "mm",
+                  "id": "filtering-frame-kids-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Frame-Width-Large/_/N-509672474",
+                  "dimensionName": "Kids Frame Width"
+                },
+                {
+                  "text": "custom:",
+                  "value": "107 - 200",
+                  "unit": "mm",
+                  "id": "filtering-frame-kids-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 107,
+                  "max": 200,
+                  "url": "/b?Nf=Frame Width|BTWN+{range}",
+                  "dimensionName": "Kids Frame Width"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "kids-frame-width-age",
+              "headerText": "Frame Width",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/frame-width.svg",
+              "isActive": "active",
+              "list": [
+                {
+                  "text": "extra-small:age:",
+                  "value": "1 - 3",
+                  "unit": "yrs",
+                  "id": "filtering-frame-kids-extra-small-yrs",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Age-Frame-Width-Extra-Small/_/N-4012095540",
+                  "dimensionName": "Age Frame Width"
+                },
+                {
+                  "text": "small:age:",
+                  "value": "4 - 7",
+                  "unit": "yrs",
+                  "id": "filtering-frame-kids-small-yrs",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Age-Frame-Width-Small/_/N-3677711831",
+                  "dimensionName": "Age Frame Width"
+                },
+                {
+                  "text": "medium:age:",
+                  "value": "8 - 12",
+                  "unit": "yrs",
+                  "id": "filtering-frame-kids-medium-yrs",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Age-Frame-Width-Medium/_/N-161781089",
+                  "dimensionName": "Age Frame Width"
+                },
+                {
+                  "text": "large:age:",
+                  "value": "13-19",
+                  "unit": "yrs",
+                  "id": "filtering-frame-kids-large-yrs",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Age-Frame-Width-Large/_/N-4225355338",
+                  "dimensionName": "Age Frame Width"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "kids-bridge",
+              "headerText": "Bridge Width",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/bridge.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "4 - 15",
+                  "unit": "mm",
+                  "id": "filtering-bridge-kids-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Bridge-Extra-Small/_/N-1416264338",
+                  "dimensionName": "Kids Bridge"
+                },
+                {
+                  "text": "small:",
+                  "value": "16 - 17",
+                  "unit": "mm",
+                  "id": "filtering-bridge-kids-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Bridge-Small/_/N-328967064",
+                  "dimensionName": "Kids Bridge"
+                },
+                {
+                  "text": "medium:",
+                  "value": "18 - 19",
+                  "unit": "mm",
+                  "id": "filtering-bridge-kids-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Bridge-Medium/_/N-2078851401",
+                  "dimensionName": "Kids Bridge"
+                },
+                {
+                  "text": "large:",
+                  "value": "20+",
+                  "unit": "mm",
+                  "id": "filtering-bridge-kids-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Bridge-Large/_/N-1439461672",
+                  "dimensionName": "Kids Bridge"
+                },
+                {
+                  "text": "custom:",
+                  "value": "8 - 32",
+                  "unit": "mm",
+                  "id": "filtering-bridge-kids-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 8,
+                  "max": 32,
+                  "url": "/b?Nf=Bridge|BTWN+{range}",
+                  "dimensionName": "Kids Bridge"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "kids-lens-height",
+              "headerText": "Lens Height",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/lens-height.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "21 - 27",
+                  "unit": "mm",
+                  "id": "filtering-height-kids-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Height-Extra-Small/_/N-376301587",
+                  "dimensionName": "Kids Lens Height"
+                },
+                {
+                  "text": "small:",
+                  "value": "28 - 32",
+                  "unit": "mm",
+                  "id": "filtering-height-kids-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Height-Small/_/N-2770243374",
+                  "dimensionName": "Kids Lens Height"
+                },
+                {
+                  "text": "medium:",
+                  "value": "33 - 40",
+                  "unit": "mm",
+                  "id": "filtering-height-kids-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Height-Medium/_/N-1329751547",
+                  "dimensionName": "Kids Lens Height"
+                },
+                {
+                  "text": "large:",
+                  "value": "41+",
+                  "unit": "mm",
+                  "id": "filtering-height-kids-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Height-Large/_/N-65335353",
+                  "dimensionName": "Kids Lens Height"
+                },
+                {
+                  "text": "custom:",
+                  "value": "19 - 77",
+                  "unit": "mm",
+                  "id": "filtering-height-kids-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 19,
+                  "max": 77,
+                  "url": "/b?Nf=Lens Height|BTWN+{range}",
+                  "dimensionName": "Kids Lens Height"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "kids-lens-width",
+              "headerText": "Lens Width",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/lens-width.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "25 - 43",
+                  "unit": "mm",
+                  "id": "filtering-lens-kids-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Width-Extra-Small/_/N-2988061479",
+                  "dimensionName": "Kids Lens Width"
+                },
+                {
+                  "text": "small:",
+                  "value": "44 - 47",
+                  "unit": "mm",
+                  "id": "filtering-lens-kids-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Width-Small/_/N-2504523688",
+                  "dimensionName": "Kids Lens Width"
+                },
+                {
+                  "text": "medium:",
+                  "value": "48 - 50",
+                  "unit": "mm",
+                  "id": "filtering-lens-kids-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Width-Medium/_/N-2574968960",
+                  "dimensionName": "Kids Lens Width"
+                },
+                {
+                  "text": "large:",
+                  "value": "51+",
+                  "unit": "mm",
+                  "id": "filtering-lens-kids-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Lens-Width-Large/_/N-3876951506",
+                  "dimensionName": "Kids Lens Width"
+                },
+                {
+                  "text": "custom:",
+                  "value": "36 - 78",
+                  "unit": "mm",
+                  "id": "filtering-lens-kids-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 36,
+                  "max": 78,
+                  "url": "/b?Nf=Lens Width|BTWN+{range}",
+                  "dimensionName": "Kids Lens Width"
+                }
+              ]
+            },
+            {
+              "tabPanelID": "kids-temple-arm",
+              "headerText": "Temple Arm",
+              "icon": "//static.zennioptical.com/dev/image/site/frame-size-icons/temple-length.svg",
+              "isActive": "",
+              "list": [
+                {
+                  "text": "extra-small:",
+                  "value": "106 - 120",
+                  "unit": "mm",
+                  "id": "filtering-temple-kids-extra-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Temple-Arm-Extra-Small/_/N-4261395014",
+                  "dimensionName": "Kids Temple Arm"
+                },
+                {
+                  "text": "small:",
+                  "value": "121 - 125",
+                  "unit": "mm",
+                  "id": "filtering-temple-kids-small",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Temple-Arm-Small/_/N-1323662452",
+                  "dimensionName": "Kids Temple Arm"
+                },
+                {
+                  "text": "medium:",
+                  "value": "126 - 135",
+                  "unit": "mm",
+                  "id": "filtering-temple-kids-medium",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Temple-Arm-Medium/_/N-1961477850",
+                  "dimensionName": "Kids Temple Arm"
+                },
+                {
+                  "text": "large:",
+                  "value": "136+",
+                  "unit": "mm",
+                  "id": "filtering-temple-kids-large",
+                  "checked": false,
+                  "isCustom": false,
+                  "min": 0,
+                  "max": 0,
+                  "url": "/b/Kids-Temple-Arm-Large/_/N-77654876",
+                  "dimensionName": "Kids Temple Arm"
+                },
+                {
+                  "text": "custom:",
+                  "value": "103 - 155",
+                  "unit": "mm",
+                  "id": "filtering-temple-kids-custom",
+                  "checked": false,
+                  "isCustom": true,
+                  "min": 103,
+                  "max": 155,
+                  "url": "/b?Nf=Temple Arm|BTWN+{range}",
+                  "dimensionName": "Kids Temple Arm"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filterId": "feature",
+      "filterText": "Feature",
+      "facetName": "feature",
+      "filterDimension": [
+        {
+          "text": "Nose Pad",
+          "value": "Nose Pad",
+          "id": "filtering-nose-pad",
+          "checked": false
+        },
+        {
+          "text": "Spring Hinge",
+          "value": "Spring Hinge",
+          "id": "filtering-spring-hinge",
+          "checked": false
+        }
+      ]
+    }
+  ]
+}

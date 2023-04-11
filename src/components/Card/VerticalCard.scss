@@ -1,0 +1,47 @@
+@import '../../style/resource.scss';
+
+.vertical-card {
+  font-family: $font-family-sans-serif;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+
+  &_icon {
+    position: absolute;
+    top: 15px;
+    right: 21.12px;
+    color: $success;
+    font-size: 1.125rem;
+  }
+
+  &_image {
+    display: block;
+    width: 124.98px;
+    height: 123.71px;
+    margin-top: $spacer-3;
+  }
+
+  &_title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $zenni-primary-color;
+    line-height: 24px;
+    text-align: center;
+    margin: $spacer-2 $spacer-0 $spacer-3;
+    letter-spacing: 0.01rem;
+  }
+
+  &_disabled {
+    color: $gray-middle;
+  }
+
+  & > .card {
+    align-items: center;
+    width: 169.5px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

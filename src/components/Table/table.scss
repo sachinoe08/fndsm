@@ -1,0 +1,13 @@
+@import '../../style/resource';
+
+.table {
+  &.table-light {
+    thead {
+      & > tr {
+        & > th {
+          border-bottom: 2px solid $gray;
+        }
+      }
+    }
+  }
+}

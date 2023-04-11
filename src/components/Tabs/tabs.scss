@@ -1,0 +1,146 @@
+@import '../../style/resource';
+
+.nav {
+  &.navbar-nav {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .nav-item {
+      flex: 0;
+    }
+  }
+
+  &.nav-tabs {
+    &.tabs-expand {
+      justify-content: space-evenly;
+      width: 100%;
+
+      .nav-item {
+        flex-grow: 1;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    &.tabs-no-border {
+      border: none;
+
+      .nav-link {
+        &:not(.active) {
+          border: none;
+        }
+      }
+    }
+
+    &.tabs-not-selected-only-bottom-border {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+
+      .nav-link {
+        &:not(.active) {
+          border: none;
+        }
+      }
+    }
+
+    &.tabs-selected-no-border {
+      border: none;
+
+      .nav-link {
+        border: none;
+
+        &:hover {
+          border: none;
+        }
+      }
+    }
+
+    &.tabs-bottom-border {
+      .nav-item {
+        .nav-link {
+          &::after {
+            top: auto;
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    &:not(.tabs-no-background) {
+      .nav-item {
+        .nav-link {
+          &.active,
+          &:hover {
+            background-color: $gray-lightest;
+          }
+        }
+      }
+    }
+
+    &.tabs-background-always-on {
+      .nav-item {
+        .nav-link {
+          background-color: $gray-lightest;
+        }
+      }
+    }
+
+    &.tabs-upper-case {
+      .nav-item {
+        .nav-link {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &.tabs-no-padding {
+      .nav-item {
+        padding-right: $spacer-2;
+        padding-left: $spacer-2;
+
+        .nav-link {
+          position: relative;
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+    }
+
+    .nav-item {
+      position: relative;
+
+      .nav-link {
+        position: relative;
+        color: $gray-dark;
+
+        &:focus {
+          outline: 0 !important;
+          // &::before {
+          //   position: absolute;
+          //   top: 10px;
+          //   right: 10px;
+          //   bottom: 10px;
+          //   left: 10px;
+          //   outline: 2px solid $pink;
+          //   content: '';
+          // }
+        }
+
+        &.active {
+          color: $primary;
+        }
+
+        @extend .tab_border_top_after;
+      }
+    }
+
+    &.tabs-content-same-color {
+      + .tab-content {
+        background-color: $gray-lightest;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import 'variables';
+// Type display classes
+@each $display, $font-size in $display-font-sizes {
+  .display-#{$display} {
+    font-family: 'Tabac G1';
+  }
+}

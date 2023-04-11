@@ -1,0 +1,49 @@
+@import '../../style/resource';
+
+$star-value: (
+  percent-1: 10%,
+  percent-2: 20%,
+  percent-3: 30%,
+  percent-4: 40%,
+  percent-5: 50%,
+  percent-6: 60%,
+  percent-7: 70%,
+  percent-8: 80%,
+  percent-9: 90%,
+  percent-10: 100%,
+  percent-0: 0,
+);
+
+.star-component {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .star-item {
+    position: relative;
+    margin-right: 10px;
+
+    &:before,
+    &:after {
+      display: block;
+      content: '\f005';
+      color: $gray;
+    }
+
+    &:after {
+      color: $primary;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+    }
+
+    @each $key, $val in $star-value {
+      &.star-#{$key}:after {
+        width: $val;
+      }
+    }
+  }
+}

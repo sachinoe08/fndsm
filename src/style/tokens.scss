@@ -1,0 +1,100 @@
+@use 'sass:math';
+@use 'sass:map';
+
+@import './_variables.scss';
+
+$bsPrefix: 'dsm-';
+
+//Typography
+// $display-font-sizes TODO the dsm display-heading-size is not match figma, so temporary to defined here again.
+$font-sizes: (
+  1: $font-size-base * 0.75,
+  // 12px
+  2: $font-size-sm,
+  // 14px
+  3: $font-size-base,
+  // 16px
+  4: $font-size-lg,
+  // 20px
+  5: $font-size-base * 1.5,
+  // 24px
+  6: $font-size-base * 1.75,
+  // 28px
+  7: $font-size-base * 2,
+  // 32px
+  8: $font-size-base * 2.5,
+  // 40px
+  9: $font-size-base * 3,
+  // 48px
+  10: $font-size-base * 3.5,
+  // 56px
+  11: $font-size-base * 4,
+  // 64px
+  12: $font-size-base * 5,
+  // 80px TODO, figma use 5rem, but px is 82, need confirm.
+  13: $font-size-base * 5.625,
+  // 90px,,,,,,,,,
+  14: $font-size-base * 1.375,
+  // 22px,
+  15: $font-size-base * 1.875,
+  // 30px,,,,
+  16: $font-size-base * 1.125,
+  // 18px,,,,
+);
+
+$font-weights: (
+  light: 200,
+  // light
+  normal: 400,
+  // normal
+  bold: 700,
+  // bold
+  extra-bold: 900,
+  // extra bold
+);
+
+$font-families: (
+  Lato: 'Lato',
+  Tabac: 'Tabac',
+);
+
+$font-family-lato: map.get($font-families, Lato), Helvetica, Arial, sans-serif;
+$font-family-tabac: map.get($font-families, Tabac), Helvetica, Arial, sans-serif;
+
+// from figma, line-height always equals current font size + 0.5rem(8px) the use math floor,
+// so return a function to calculate line height.
+@function lineHeight($fontSize) {
+  @return math.floor($fontSize + 0.5rem);
+}
+
+// Space: please use $spacer in _variables.scss in dsm.
+
+// Color: please use color in _variables.scss in dsm.
+$dark-grey: #453635;
+$blue-grey: #0091a9;
+$shop_now_color: #453635;
+$link_color: #0091a9;
+$title-hr: #811d63;
+
+// Border
+$border-default: 1px solid $gray-dark;
+$border-gray: 1px solid $gray;
+$border-primary-bold: 3px solid $primary;
+
+// Shadows
+$shadow-default: 0 -5px 10px -5px rgb(0 0 0 / 20%);
+
+// Animated Transition
+$transition-ease: ease;
+$transition-linear: linear; /* cubic-bezier(0,0,1,1;} */
+$transition-ease-in-out: ease-in-out; /* cubic-bezier(0.42,0,0.58,1) */
+$transition-ease-in: ease-in; /* cubic-bezier(0.42,0,1,1) */
+$transition-ease-out: ease-out; /* cubic-bezier(0,0,0.58,1) */
+
+$transition-fast-duration: 300ms;
+$transition-default-duration: 500ms;
+$transition-slow-duration: 800ms;
+
+$transition-default: all $transition-ease $transition-default-duration;
+
+// Breakpoint: please use $grid-breakpoints in _variables.scss in dsm.

@@ -1,0 +1,21 @@
+steps:
+  - id: 'Installing Dependencies'
+    name: node:16
+    entrypoint: yarn
+    args: ['install']
+  - id: 'Build Storybook'
+    name: node:16
+    entrypoint: yarn
+    args: ['build-storybook']
+  - id: 'Removing Old Files'
+    name: 'gcr.io/cloud-builders/gsutil'
+    entrypoint: '/bin/bash'
+    args: ['-c', 'gsutil rm -r ${_BUCKET} || true']
+  - id: 'Publish New Files'
+    name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', 'storybook-static/*', '${_BUCKET}']
+timeout: 1200s
+options:
+  substitutionOption: ALLOW_LOOSE
+substitutions:
+  _BUCKET: 'gs://design-system-storybook-dev'

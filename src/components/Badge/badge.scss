@@ -1,0 +1,22 @@
+@import '../../style/resource';
+
+.badge {
+  width: 100%;
+  padding: $spacer-2;
+
+  &.border-on {
+    border: 1px solid $gray;
+  }
+
+  &.badge-border-radius-none {
+    border-radius: 0;
+  }
+
+  &.badge-border-radius-sm {
+    border-radius: 3px;
+  }
+
+  &.badge-border-radius-md {
+    border-radius: 10px;
+  }
+}

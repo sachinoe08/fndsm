@@ -1,0 +1,132 @@
+@import '../../style/resource.scss';
+$grid-breakpoint-sm: map_get($grid-breakpoints, 'sm');
+$grid-breakpoint-md: map_get($grid-breakpoints, 'md');
+$grid-breakpoint-lg: map_get($grid-breakpoints, 'lg');
+$grid-breakpoint-xl: map_get($grid-breakpoints, 'xl');
+
+.product-image-container {
+  font-family: $font-family-sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+
+  & .product-promo-text {
+    color: $pink;
+    font-size: 0.875rem;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.005rem;
+  }
+
+  & .product-image-card {
+    display: flex;
+
+    & .image-container {
+      flex: 1;
+      margin: auto 0;
+
+      & > div {
+        min-height: 45px;
+        width: 43.75vw;
+
+        @media (min-width: $grid-breakpoint-sm) {
+          min-height: 98px;
+          width: 52.08333333vw;
+        }
+
+        @media (min-width: $grid-breakpoint-md) {
+          min-height: 65px;
+          width: 26.04166667vw;
+        }
+
+        @media (min-width: $grid-breakpoint-lg) {
+          min-height: 50px;
+          width: 15.12096774vw;
+        }
+
+        @media (min-width: $grid-breakpoint-xl) {
+          min-height: 66px;
+          width: 16.66666667vw;
+        }
+
+        & .card-image {
+          margin: auto 0;
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    & .product-details {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      justify-content: center;
+      font-size: 1rem;
+
+      &_label {
+        color: $gray-dark;
+        letter-spacing: 0.005rem;
+        font-weight: 400;
+      }
+
+      &_price {
+        text-align: center;
+        margin-bottom: $spacer-1;
+        color: $gray-dark;
+        font-weight: 700;
+
+        & .icon-plus {
+          font-size: 0.875rem;
+          margin-right: $spacer-1;
+        }
+
+        & .icon-chevron {
+          font-size: 1.125rem;
+          margin-left: $spacer-2;
+          color: $zenni-primary-color;
+        }
+
+        & .icon-check {
+          color: $success;
+          font-size: 1.125rem;
+          margin-left: $spacer-2;
+        }
+      }
+
+      &_button {
+        display: flex;
+        align-items: center;
+
+        & .button-container {
+          z-index: 20;
+        }
+
+        & .icon-plus {
+          font-size: 0.875rem;
+        }
+
+        & .icon-minus {
+          color: $gray-dark;
+          font-size: 0.875rem;
+        }
+
+        & .details-button {
+          padding: 0;
+          width: 37px;
+          height: 34px;
+        }
+
+        & .details-input {
+          outline: none;
+          text-align: center;
+          width: 34px;
+          height: 34px;
+          border: 1px solid $gray-dark;
+        }
+        & .primary-color {
+          color: $zenni-primary-color;
+        }
+      }
+    }
+  }
+}

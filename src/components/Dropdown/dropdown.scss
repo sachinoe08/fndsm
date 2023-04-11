@@ -1,0 +1,125 @@
+@import '../../style/resource';
+
+$arrow_size: 7px;
+
+$drops-map: (
+  'default': (
+    toggleColor: $gray-darkest,
+    toggleBorderColor: $gray-dark,
+  ),
+);
+
+.dropdown-button {
+  background-color: $white;
+
+  .btn {
+    font-weight: normal;
+    text-align: left;
+
+    @each $drops, $map in $drops-map {
+      &.btn-#{$drops} {
+        &.dropdown-toggle {
+          color: map-get($map, toggleColor);
+          border: 1px solid map-get($map, toggleBorderColor);
+
+          &:hover,
+          &:active {
+            color: map-get($map, toggleColor);
+          }
+        }
+      }
+    }
+
+    &.btn-selected {
+      .toggle-icon-box {
+        &::before {
+          height: 100%;
+          width: 30px;
+          display: block;
+          position: absolute;
+          left: -30px;
+          content: '';
+        }
+      }
+    }
+
+    &.btn-selected {
+      &.dropdown-toggle {
+        .toggle-icon-box {
+          &::before {
+            background: transparent escape-svg(getCheckImage(#43b02a)) center / 18px auto no-repeat;
+          }
+        }
+      }
+    }
+
+    &.dropdown-toggle {
+      background-color: $white;
+      height: 22px !important;
+      box-sizing: content-box;
+      position: relative;
+      padding: ($spacer-3 * 0.8) ($spacer-3 * 1.25);
+      width: calc(100% - 42px);
+
+      &:is(:focus, :active) {
+        box-shadow: 0 0 0 3px $primary-lightest;
+      }
+
+      &:after {
+        display: none;
+      }
+
+      .toggle-icon-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 48px;
+
+        .toggle-icon {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background-image: escape-svg(getChevronDownImage($gray-dark)) !important;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 12px;
+        }
+      }
+    }
+  }
+
+  &.show {
+    .dropdown-toggle {
+      .toggle-icon {
+        span {
+          border-top: 0;
+          border-bottom: $arrow_size dashed;
+          border-right: $arrow_size solid transparent;
+          border-left: $arrow_size solid transparent;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    border-color: $gray-dark;
+
+    .dropdown-item {
+      color: $primary;
+      background-color: transparent;
+      height: 22px;
+      box-sizing: content-box;
+      width: calc(100% - 40px);
+      padding: $spacer-1 ($spacer-3 * 1.25);
+
+      &:hover {
+        background-color: $primary-lightest;
+        color: $primary-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../style/resource';
+
+$alerts-map: (
+  'secondary': (
+    text-color: $primary-darkest,
+    background-color: $primary-lightest,
+    close-button: $primary-darkest,
+  ),
+  'success': (
+    text-color: $green-darkest,
+    background-color: $green-lightest,
+    close-button: $green-darkest,
+  ),
+  'warning': (
+    text-color: $orange-darkest,
+    background-color: $orange-lightest,
+    close-button: $orange-darkest,
+  ),
+  'danger': (
+    text-color: $red-darkest,
+    background-color: $red-lightest,
+    close-button: $red-darkest,
+  ),
+  'info': (
+    text-color: $blue-darkest,
+    background-color: $blue-lightest,
+    close-button: $blue-darkest,
+  ),
+  'light': (
+    text-color: $gray-darkest,
+    background-color: $gray-lightest,
+    close-button: $gray-dark,
+  ),
+  'dark': (
+    text-color: $white,
+    background-color: $gray-dark,
+    close-button: $white,
+  ),
+  'purple': (
+    text-color: $white,
+    background-color: $purple-alert,
+    close-button: $gray-dark,
+  ),
+);
+
+.alert-common-props {
+  border: 0;
+}
+
+.alert {
+  .btn-close {
+    background-size: 12px !important;
+    padding-top: 0;
+    padding-right: 0;
+    box-shadow: none !important;
+  }
+
+  &.alert-primary {
+    color: $white;
+    background-color: $primary;
+    @extend .alert-common-props;
+    &.alert-dismissible {
+      .btn-close {
+        background: transparent escape-svg(getCloseImage($white)) center / $btn-close-width auto
+          no-repeat;
+        opacity: 1;
+      }
+    }
+  }
+  @each $alert, $map in $alerts-map {
+    &.alert-#{$alert} {
+      color: map-get($map, text-color);
+      background-color: map-get($map, background-color);
+      @extend .alert-common-props;
+      &.alert-dismissible {
+        .btn-close {
+          background: transparent
+            escape-svg(getCloseImage(map-get($map, close-button)))
+            center /
+            $btn-close-width
+            auto
+            no-repeat;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

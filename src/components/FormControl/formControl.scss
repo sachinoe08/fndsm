@@ -1,0 +1,185 @@
+@import '../../style/resource';
+
+@mixin input-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  padding-right: calc(1.5em + 0.75rem);
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 12px;
+  pointer-events: none;
+}
+
+.form-floating,
+.input-wrapper {
+  position: relative;
+
+  .form-select,
+  .form-control {
+    color: $gray-darkest;
+
+    &::placeholder,
+    + label,
+    + .input-icon + label,
+    + .input-icon + .show-button + label {
+      color: $gray-darkest;
+    }
+
+    &:required:not(.is-invalid, .is-warning, .is-valid) {
+      background-image: none;
+
+      ~ .input-icon {
+        background-image: escape-svg(getAsterisk($gray-dark));
+        @include input-icon;
+      }
+    }
+
+    &[type='color'] {
+      padding-right: 13px;
+
+      &.is-valid,
+      &.is-invalid,
+      &.is-warning {
+        background-image: none;
+      }
+    }
+
+    &.is-valid {
+      color: $gray-darkest;
+      background-color: $green-lightest;
+      background-image: none;
+      border-color: $green;
+
+      &::placeholder,
+      + label,
+      + .input-icon + label,
+      + .input-icon + .show-button + label {
+        color: $gray-dark;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      ~ .input-icon {
+        background-image: escape-svg($form-feedback-icon-valid);
+        background-size: 22px;
+        @include input-icon;
+      }
+
+      &:is(:focus, :active) {
+        box-shadow: 0 0 0 3px rgba($green, 0.25) inset;
+      }
+    }
+
+    &:is(:focus, :active) {
+      &:not(.is-valid, .is-invalid, .is-warning, :disabled) {
+        border: 1px solid $primary-lightest;
+      }
+
+      box-shadow: none;
+    }
+
+    &.is-warning {
+      color: $orange-darkest;
+      background-color: $orange-lightest;
+      background-image: none;
+      border-color: $orange;
+
+      &:required {
+        background-image: none;
+
+        ~ .input-icon {
+          background-image: escape-svg(getAsterisk($orange));
+          @include input-icon;
+        }
+      }
+
+      &::placeholder,
+      + label,
+      + .input-icon + label,
+      + .input-icon + .show-button + label {
+        color: $orange-darkest;
+      }
+
+      &:is(:focus, :active) {
+        box-shadow: 0 0 0 3px rgba($orange, 0.25) inset;
+      }
+    }
+
+    &.is-invalid {
+      color: $red-darkest;
+      background-color: $red-lightest;
+      background-image: none;
+      border-color: $red;
+
+      &:required {
+        ~ .input-icon {
+          background-image: escape-svg(getAsterisk($red));
+          @include input-icon;
+        }
+      }
+
+      &::placeholder,
+      + label,
+      + .input-icon + label,
+      + .input-icon + .show-button + label {
+        color: $red-darkest;
+      }
+
+      &:is(:focus, :active) {
+        box-shadow: 0 0 0 3px rgba($red, 0.25) inset;
+      }
+    }
+
+    &:disabled {
+      color: $gray-middle;
+      background: $white;
+      border-color: $gray-middle;
+      cursor: not-allowed;
+
+      &:required {
+        background-image: none;
+
+        ~ .input-icon {
+          background-image: escape-svg(getAsterisk($gray-middle));
+          @include input-icon;
+        }
+      }
+
+      &::placeholder,
+      + label,
+      + .input-icon + label,
+      + .input-icon + .show-button + label {
+        color: $gray-middle;
+      }
+    }
+  }
+
+  + .form-label {
+    display: block;
+    margin-top: $spacer-1;
+    color: $gray-dark;
+    font-size: 0.75rem;
+
+    &.is-invalid {
+      color: $red-darkest;
+    }
+
+    &.is-warning {
+      color: $orange-darkest;
+    }
+  }
+
+  .show-button {
+    position: absolute;
+    top: calc(50% - 11px);
+    right: 40px;
+    color: $primary;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+}

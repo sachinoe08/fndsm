@@ -1,0 +1,450 @@
+@import 'bootstrap/scss/functions';
+
+$zenni-primary-color: #007b8f;
+
+$zenni-secondary-color: #b2e0e5;
+
+$zenni-third-color: #0099a8;
+
+/*
+
+  Bootstrap override
+
+ */
+
+// colors
+
+$primary: $zenni-primary-color;
+
+$secondary: $zenni-secondary-color;
+
+$third: $zenni-third-color;
+
+$white: #fff;
+
+$black: #000;
+
+//backgroundColor
+
+$bg-gray-lightest: #fafafa;
+
+// primary messaging
+
+$primary-lightest: #b2e0e5;
+
+$primary-light: #4cb7c2;
+
+$primary: $zenni-primary-color;
+
+$primary-dark: #005769;
+
+$primary-darkest: #03424c;
+
+//grays
+
+$gray-moer-lightest: #ffffff;
+
+$gray-lightest: #fafafa;
+
+$gray-less-lightest: #f5f5f5;
+
+$gray-light: #f6f6f3;
+
+$gray: #d8d1ca;
+
+$gray-less-light: #d8d8d8;
+
+$gray-middle: #999999;
+$gray-dark: #666666;
+
+$gray-darkest: #333333;
+
+$gray-darker: #aaaaaa;
+
+$gray-less-darker: #bdbdbd;
+
+// Error messaging
+
+$red-lightest: #fce6e6;
+
+$red-light: #f8b3b3;
+
+$red: #e60000;
+
+$red-dark: #b80000;
+
+$red-darkest: #730000;
+
+// Waring messaging
+
+$orange-lightest: #ffeee9;
+
+$orange-light: #ffcdbc;
+
+$orange: #e64e1c;
+
+$orange-dark: #b33d16;
+
+$orange-darkest: #802c10;
+
+// Success messaging
+
+$green-lightest: #e6f3ea;
+
+$green-light: #b3dabf;
+
+$green: #00822a;
+
+$green-dark: #006220;
+
+$green-darkest: #004115;
+
+// Recommended messaging: Blues
+
+$blue-lightest: #f2f8fc;
+
+$blue-light: #cce4f2;
+
+$blue: #0078c0;
+
+$blue-less-dark: #e0ecf0;
+
+$blue-dark: #00639e;
+
+$blue-darkest: #004e7c;
+
+// Pink
+
+$pink-lightest: #f7e6f3;
+
+$pink-light: #e6b5db;
+
+$pink: #cf0d9e;
+
+$pink-dark: #a00a7b;
+
+$pink-darkest: #7c0860;
+
+$purple-alert: #cf0d9e;
+
+$success: $green;
+
+$info: $blue;
+
+$warning: $orange;
+
+$danger: $red;
+
+$dark: $gray-darkest;
+
+$light: $gray-lightest;
+
+$required: $gray-darkest;
+
+$search-warning: $pink;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'required': $pink,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'dark': $dark,
+  'light': $light,
+);
+
+//border-radius-variables
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, '$value');
+
+// scss-docs-start border-radius-variables
+
+$border-radius: 0;
+
+$border-radius-lg: 0;
+
+$border-radius-sm: 0;
+
+$border-radius-pill: 50rem;
+
+//alert
+
+$alert-border-radius: $border-radius;
+
+//accordion
+
+$accordion-button-bg: #fff;
+
+//close button variables
+
+$btn-close-width: 1em;
+
+$btn-close-color: $dark;
+
+$btn-close-bg: url("data:image/svg+xml,<svg width='16' height='16' viewBox='0 0 16 16' fill='#{$btn-close-color}' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M11.0327 8L15.5814 12.5486C16.1395 13.1073 16.1395 14.0122 15.5814 14.5704L14.5704 15.5814C14.0122 16.1395 13.1068 16.1395 12.5486 15.5814L8 11.0327L3.45136 15.5814C2.89321 16.1395 1.98776 16.1395 1.42956 15.5814L0.418645 14.5704C-0.139548 14.0118 -0.139548 13.1068 0.418645 12.5486L4.96729 8L0.418645 3.45136C-0.139548 2.89272 -0.139548 1.98776 0.418645 1.42956L1.42956 0.418645C1.9882 -0.139548 2.89321 -0.139548 3.45136 0.418645L8 4.96729L12.5486 0.418645C13.1073 -0.139548 14.0122 -0.139548 14.5704 0.418645L15.5814 1.42956C16.1395 1.9882 16.1395 2.89321 15.5814 3.45136L11.0327 8Z' /></svg>");
+
+$btn-close-bg-dark: $btn-close-bg;
+
+$btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+
+$escaped-characters: (('<', '%3c'), ('>', '%3e'), ('#', '%23'), ('(', '%28'), (')', '%29'));
+
+//navbar
+
+$navbar-height-lg: 72px;
+
+$navbar-height-md: 62px;
+
+$navbar-height-sm: 47px;
+
+//list group
+
+$list-group-active-color: white;
+
+$list-group-active-bg: $primary;
+
+$list-group-active-border-color: transparent;
+
+//Fonts
+
+$font-family-sans-serif: 'Lato', Helvetica, Arial, sans-serif;
+
+$text-muted: $gray-dark;
+
+//Font-sizes
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$font-regular: 'Lato Regular';
+
+$font-italic: 'Lato Italic';
+
+$font-Tabac: 'Tabac G1 Bold';
+
+$font-bold: 'Lato Bold';
+
+$font-Lato: 'Lato';
+
+$font-light: 'Lato Light';
+
+$font-AgencyBold: 'AgencyBold';
+
+$font-AgencyBlack: 'AgencyBlack';
+
+//Button
+
+$btn-border-radius: $border-radius;
+
+$btn-border-radius-sm: $border-radius-sm;
+
+$btn-border-radius-lg: $border-radius-lg;
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+//Table
+
+$border-color: $gray;
+
+$table-color: $gray-lightest;
+
+$table-bg: null;
+
+$table-accent-bg: transparent;
+
+$table-striped-color: $table-color;
+
+$table-striped-bg: $gray-lightest;
+
+$table-active-color: $table-color;
+
+$table-active-bg: $gray-lightest;
+
+$table-hover-color: $table-color;
+
+$table-hover-bg: $gray-lightest;
+
+$table-bg-scale: -90%;
+
+$table-variants: (
+  'primary': shift-color($primary, $table-bg-scale),
+  'secondary': shift-color($secondary, $table-bg-scale),
+  'success': shift-color($success, $table-bg-scale),
+  'info': shift-color($info, $table-bg-scale),
+  'warning': shift-color($warning, $table-bg-scale),
+  'danger': shift-color($danger, $table-bg-scale),
+  'light': $gray-lightest,
+  'dark': $gray-darkest,
+);
+
+//Popover
+
+$popover-header-bg: #fff;
+
+$popover-border-width: 0;
+
+$popover-border-radius: 0;
+
+//Form
+
+$input-padding-x: 1.125rem;
+
+$input-padding-y: 0.8125em;
+
+$input-font-family: $font-family-sans-serif;
+
+$input-border-width: 1px;
+
+$input-color: $gray-dark;
+
+$input-border-color: $gray-dark;
+
+$input-placeholder-color: $gray;
+$input-font-weight: 400;
+
+$input-border-radius: 0;
+
+$input-border-radius-lg: 0;
+
+$input-border-radius-sm: 0;
+
+$form-feedback-valid-color: $success;
+
+$form-feedback-invalid-color: $danger;
+
+$form-feedback-warning-color: $pink;
+
+$form-feedback-icon-valid-color: $form-feedback-valid-color;
+
+$form-feedback-icon-required: url("data:image/svg+xml,<svg aria-hidden='true' data-prefix='fas' data-icon='asterisk' class='svg-inline--fa fa-asterisk fa-w-16' xmlns='http://www.w3.org/2000/svg'  width='10' height='10' viewBox='0 0 512 512'><path fill='#{$gray}' d='M478.21 334.093 336 256l142.21-78.093c11.795-6.477 15.961-21.384 9.232-33.037l-19.48-33.741c-6.728-11.653-21.72-15.499-33.227-8.523L296 186.718l3.475-162.204C299.763 11.061 288.937 0 275.48 0h-38.96c-13.456 0-24.283 11.061-23.994 24.514L216 186.718 77.265 102.607c-11.506-6.976-26.499-3.13-33.227 8.523l-19.48 33.741c-6.728 11.653-2.562 26.56 9.233 33.037L176 256 33.79 334.093c-11.795 6.477-15.961 21.384-9.232 33.037l19.48 33.741c6.728 11.653 21.721 15.499 33.227 8.523L216 325.282l-3.475 162.204C212.237 500.939 223.064 512 236.52 512h38.961c13.456 0 24.283-11.061 23.995-24.514L296 325.282l138.735 84.111c11.506 6.976 26.499 3.13 33.227-8.523l19.48-33.741c6.728-11.653 2.563-26.559-9.232-33.036z'/></svg>");
+
+$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+
+$form-feedback-icon-invalid-color: $form-feedback-invalid-color;
+
+$form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' width='10' height='10' fill='none' stroke='#{$form-feedback-warning-color}'><path d='M10.7 12.4H1.6c-.9 0-1.6-.7-1.6-1.6V1.6C0 .7.7 0 1.6 0h9.1c.9 0 1.6.7 1.6 1.6v9.1c.1.9-.7 1.7-1.6 1.7z' fill='#{$form-feedback-invalid-color}'/></svg>");
+
+$form-feedback-icon-warning: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' width='10' height='10' fill='none' stroke='#{$form-feedback-warning-color}'><path d='M10.7 12.4H1.6c-.9 0-1.6-.7-1.6-1.6V1.6C0 .7.7 0 1.6 0h9.1c.9 0 1.6.7 1.6 1.6v9.1c.1.9-.7 1.7-1.6 1.7z' fill='#{$form-feedback-warning-color}'/></svg>");
+
+$form-validation-states: (
+  'valid': (
+    'color': $form-feedback-valid-color,
+    'icon': $form-feedback-icon-valid,
+  ),
+  'invalid': (
+    'color': $form-feedback-invalid-color,
+    'icon': $form-feedback-icon-invalid,
+  ),
+  'warning': (
+    'color': $pink,
+    'icon': $form-feedback-icon-warning,
+  ),
+);
+
+// Select
+
+$form-select-padding-x: $input-padding-x;
+
+$form-select-border-radius: 0;
+
+$form-select-padding-y: $input-padding-y;
+
+$form-select-indicator-color: $gray;
+
+$form-select-bg-size: 12px;
+
+$form-select-feedback-icon-size: 12px;
+
+$form-select-color: $gray;
+
+$focus-box-shadow: none;
+
+$form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' class='svg-inline--fa fa-caret-down' data-icon='caret-down' data-prefix='fas' viewBox='0 0 320 512'><path fill='#{$gray-dark}' d='M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z'/></svg>");
+
+//checkbox
+
+$form-check-input-border-radius: 0;
+
+$form-check-input-active-filter: $primary;
+
+$form-check-input-checked-bg-color: $primary;
+
+$form-check-input-checked-border-color: $gray;
+
+$form-check-input-width: 1rem;
+
+$form-check-input-border: 1px solid $gray;
+
+//Range
+
+$form-range-track-border-radius: 0;
+
+$form-range-thumb-bg: $primary;
+
+//Input Group
+
+$input-group-addon-bg: $primary;
+
+$input-group-addon-color: $white;
+
+$input-group-addon-border-color: 2px;
+
+//Heading
+
+$display-font-family: 'Tabac G1';
+
+$display-font-sizes: (
+  1: 6rem,
+  2: 5.5rem,
+  3: 4.5rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+);
+
+$display-font-weight: 300;
+
+//Carousel
+
+$carousel-caption-color: unset;
+
+//Logo
+
+$logo-width: 90px;
+
+$logo-width-xl: 150px;
+
+$logo-width-md: 110px;
+
+$logo-size: (
+  'md': $logo-width-md,
+  'xl': $logo-width-xl,
+);
+
+//icon
+$spacer: 1rem !default;
+$spacer-0: 0 !default;
+$spacer-1: $spacer * 0.25 !default;
+$spacer-2: $spacer * 0.5 !default;
+$spacer-3: $spacer !default;
+$spacer-4: $spacer * 1.5 !default;
+$spacer-5: $spacer * 3 !default;
+
+$spacers: (
+  0: $spacer-0,
+  1: $spacer-1,
+  2: $spacer-2,
+  3: $spacer-3,
+  4: $spacer-4,
+  5: $spacer-5,
+) !default;
